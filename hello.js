@@ -1,16 +1,16 @@
-console.log(parseJSON('{ \n' +
-    '  "status": 100,\n' +
-    '  "msg": "返回成功",\n' +
-    '  "data": { \n' +
-    '    "string": "abc",\n' +
-    '    "array": [1,2,3], \n' +
-    '    "children": [ \n' +
-    '      { "name": "Jay", "age": 41, "occupation": "Musician"}, \n' +
-    '      { "name": "Jack", "age": 56, "occupation": "CEO"}, \n' +
-    '      { "name": "Kobe", "age": 42, "occupation": "Basketball players"}\n' +
-    '    ]\n' +
-    '  } \n' +
-    '}'));
+// console.log(parseJSON('{ \n' +
+//     '  "status": 100,\n' +
+//     '  "msg": "返回成功",\n' +
+//     '  "data": { \n' +
+//     '    "string": "abc",\n' +
+//     '    "array": [1,2,3], \n' +
+//     '    "children": [ \n' +
+//     '      { "name": "Jay", "age": 41, "occupation": "Musician"}, \n' +
+//     '      { "name": "Jack", "age": 56, "occupation": "CEO"}, \n' +
+//     '      { "name": "Kobe", "age": 42, "occupation": "Basketball players"}\n' +
+//     '    ]\n' +
+//     '  } \n' +
+//     '}'));
 function handleSubmit() {
     var input = document.getElementById('input-box').value;
     document.getElementById('output-box').innerText = parseJSON(input);
