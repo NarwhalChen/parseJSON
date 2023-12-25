@@ -1,19 +1,9 @@
-console.log(JSON.stringify(parseJSON('{ \n' +
-    '  "status": 100,\n' +
-    '  "msg": "返回成功",\n' +
-    '  "data": { \n' +
-    '    "string": "abc",\n' +
-    '    "array": [1,2,3], \n' +
-    '    "children": [ \n' +
-    '      { "name": "Jay", "age": 41, "occupation": "Musician"}, \n' +
-    '      { "name": "Jack", "age": 56, "occupation": "CEO"}, \n' +
-    '      { "name": "Kobe", "age": 42, "occupation": "Basketball players"}\n' +
-    '    ]\n' +
-    '  } \n' +
-    '}'), null, 2));
+console.log(JSON.stringify(parseJSON('{   "msg": "返回成功" }'), null, 2));
 function handleSubmit() {
     var input = document.getElementById('input-box').value;
-    document.getElementById('output-box').innerText = JSON.stringify(parseJSON(input), null, 2);
+    var output = JSON.stringify(parseJSON(input), null, 2)
+    console.log(output)
+    document.getElementById('output-box').innerText = output
     // Prevent form from submitting to the server
     return false;
 }
